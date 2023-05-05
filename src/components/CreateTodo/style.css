@@ -1,0 +1,35 @@
+.form-input {
+    font-size: 18px;
+    width: 100%;
+}
+
+.form-input-container {
+    display: flex;
+    gap: 18px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-container.show {
+    display: flex;
+}
+
+.actions {
+    justify-content: center;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 8px 16px;
+    min-width: 90px;
+}
+
+.btn.btn-primary {
+    background-color: #447665;
+    border: 1px solid green;
+    color: white;
+}

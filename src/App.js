@@ -1,28 +1,19 @@
-import { useState } from 'react';
+import Todo from './components/Todo';
 import './style.css';
 
 function App() {
 
-  const [colorClass, setColorClass] = useState("green");
-
-  const changeColor = () => {
-    if (colorClass === "green") {
-      setColorClass("red")
-    } else {
-      setColorClass("green");
-    }
-  }
-
-  const getGreetings = (name) => {
-    return `Welcome ${name}`;
-  }
-
-
-
   return (
-    <div>
-      <h1 className={colorClass}>{getGreetings("to DoE")}</h1>
-      <button onClick={changeColor}>Change to {colorClass === "green" ? "Red" : "Green"}</button>
+    <div className='app-container'>
+      <header>
+        <h3>DoE Task Tracker</h3>
+      </header>
+      <div className='content-container'>
+        <Todo />
+      </div>
+      <footer>
+        Copyright &copy; NYC DoE 
+      </footer>
     </div>
   );
 

@@ -1,7 +1,26 @@
-.green {
-  color: green;
+.app-container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.red {
-  color: red;
+.app-container header {
+  height: 60px;
+  background-color: blueviolet;
+  color: white;
+  padding: 18px;
+}
+
+.app-container .content-container {
+  flex: 1 1 auto;
+  background-color: pink;
+  padding: 18px;
+}
+
+.app-container footer {
+  height: 40px;
+  background-color: aquamarine;
+  padding: 6px 18px;
+  text-align: center;
 }

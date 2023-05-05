@@ -1,0 +1,35 @@
+.todo-container {}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.todo-list .todo-item {
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.todo-item .title {
+    font-weight: bold;
+}
+
+.todo-item .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-item .status {
+    text-align: right;
+}
+
+.status.not-completed {
+    color: red;
+}
+
+.status.completed {
+    color: green;
+}
